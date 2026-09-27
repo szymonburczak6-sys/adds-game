@@ -31,7 +31,7 @@ jobs:
           rm -rf extracted_project
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       - name: Sync Capacitor
         run: npx cap sync
